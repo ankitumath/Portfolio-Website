@@ -120,7 +120,7 @@ function Contact() {
           <button
             type="submit"
             disabled={loading}
-            className="bg-blue-600 text-white px-6 py-3 rounded transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700"
           >
             {loading ? "Sending..." : "Send Message"}
           </button>

@@ -32,13 +32,15 @@ function Hero() {
               <a
                 href={resume}
                 download
-                className="bg-blue-600 text-white px-6 py-3 rounded transition-all duration-300 hover:scale-105 hover:shadow-lg"              >
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+              >
                 Download Resume
               </a>
 
               <a
                 href="#projects"
-              className="bg-blue-600 text-white px-6 py-3 rounded transition-all duration-300 hover:scale-105 hover:shadow-lg"              >
+                className="border border-slate-900 px-6 py-3 rounded-lg hover:bg-slate-900 hover:text-white transition"
+              >
                 View Projects
               </a>
 
