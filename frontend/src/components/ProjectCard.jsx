@@ -8,8 +8,7 @@ function ProjectCard({ project }) {
   whileHover={{
     scale: 1.05,
   }}
- className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-
+className="bg-white rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
       <img
         src={project.image}
         alt={project.title}
@@ -30,8 +29,7 @@ function ProjectCard({ project }) {
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
-            >
+className="bg-white rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"            >
               {tech}
             </span>
           ))}
@@ -43,8 +41,7 @@ function ProjectCard({ project }) {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="bg-slate-900 text-white px-4 py-2 rounded-lg"
-          >
+className="bg-white rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"          >
             GitHub
           </a>
 
@@ -52,8 +49,7 @@ function ProjectCard({ project }) {
             href={project.demo}
             target="_blank"
             rel="noreferrer"
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg"
-          >
+className="bg-white rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"          >
             Live Demo
           </a>
 
