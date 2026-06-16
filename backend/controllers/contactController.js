@@ -4,7 +4,6 @@ const sendMessage = async (req, res) => {
   try {
     const { name, email, subject, message } = req.body;
 
-    // Validation
     if (!name || !email || !subject || !message) {
       return res.status(400).json({
         success: false,
@@ -18,6 +17,8 @@ const sendMessage = async (req, res) => {
       subject,
       message,
     });
+
+    console.log("Saved Contact:", contact);
 
     res.status(201).json({
       success: true,
