@@ -1,26 +1,30 @@
 import teamBuilderImg from "../assets/teamBuilder.png";
 import squidHackImg from "../assets/squidHack.png";
+import OnCourseIMG from "../assets/OnCourseIMG.png";
+
 
 const projects = [
-  {
+
+   {
     id: 1,
-    title: "Hackathon Team Builder Website",
+    title: "Online Course Management System",
     description:
-      "A responsive website for building teams for hackathons and exploring hackthons.",
-    image:
-      teamBuilderImg,
+      "A full-stack MERN application that enables students to browse and enroll in courses, track learning progress, and allows administrators to manage courses and enrollments.",
+      image:
+      OnCourseIMG,
     technologies: [
-      "HTML",
-      "CSS",
+      "React",
+      "Node.js",
       "MongoDB",
-      "Postman",
+      "Express.js",
+      "JWT",
       "Tailwind CSS",
-      "JavaScript",
+      "Axios",
     ],
     github:
-      "https://github.com/ankitumath/Mongodb-Project",
+      "https://github.com/ankitumath/Online-Course-Management-System",
     demo:
-      "https://your-portfolio.vercel.app",
+      "https://online-course-management-system-one.vercel.app",
   },
 
   {
@@ -45,6 +49,28 @@ const projects = [
     demo:
       "https://taskmanager.vercel.app",
   },
+
+  {
+    id: 3,
+    title: "Hackathon Team Builder Website",
+    description:
+      "A responsive website for building teams for hackathons and exploring hackthons.",
+    image:
+      teamBuilderImg,
+    technologies: [
+      "HTML",
+      "CSS",
+      "MongoDB",
+      "Postman",
+      "Tailwind CSS",
+      "JavaScript",
+    ],
+    github:
+      "https://github.com/ankitumath/Mongodb-Project",
+    demo:
+      "https://your-portfolio.vercel.app",
+  },
+
 ];
 
 export default projects;
