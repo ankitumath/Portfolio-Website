@@ -1,16 +1,21 @@
 import profileImage from "../assets/profile.jpg";
 import resume from "../assets/Ankit_Umath_Resume.pdf";
-import teamBuilder from "../assets/teamBuilder.png";
-import squidHack from "../assets/squidHack.png";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 function Hero() {
   return (
-   <section className="pt-24">
+   <section className="min-h-screen flex items-center pt-20" id="home">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           
           {/* Left Content */}
           <div>
+            <div className="mb-4">
+  <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+    🟢 Available for Internship Opportunities
+  </span>
+</div>
             <p className="text-blue-600 font-semibold mb-2">
               Hello, I'm
             </p>
@@ -22,6 +27,18 @@ function Hero() {
             </h2>
             
             <p className="text-gray-600 mt-4">
+              <div className="flex flex-wrap gap-3 mt-5">
+  {["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"].map(
+    (tech) => (
+      <span
+        key={tech}
+        className="bg-slate-100 px-3 py-1 rounded-full text-sm font-medium"
+      >
+        {tech}
+      </span>
+    )
+  )}
+</div>
               Passionate about building responsive,
               modern and user-friendly web applications
               using React, Node.js, Express and MongoDB.
@@ -45,6 +62,42 @@ function Hero() {
               </a>
 
             </div>
+
+            <div className="flex gap-5 mt-8 text-2xl">
+  <a
+    href="https://github.com/ankitumath"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-600 transition"
+  >
+    <FaGithub />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/ankit-umath-26b928328/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-600 transition"
+  >
+    <FaLinkedin />
+  </a>
+
+  <a
+    href="mailto:ankitumath30@gmail.com"
+    className="hover:text-blue-600 transition"
+  >
+    <FaEnvelope />
+  </a>
+
+  <a
+    href="https://leetcode.com/u/ankit_umath/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-600 transition"
+  >
+    <SiLeetcode />
+  </a>
+</div>
           </div>
 
           {/* Right Content */}

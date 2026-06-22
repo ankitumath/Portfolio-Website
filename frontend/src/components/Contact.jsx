@@ -125,38 +125,13 @@ function Contact() {
             {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
-            <div className="mt-10 text-center">
-  <h3 className="text-xl font-semibold mb-5">
-    Connect With Me
-  </h3>
 
-  <div className="flex justify-center gap-8 text-3xl">
-    <a
-      href="https://github.com/ankitumath"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-110 transition-transform"
-    >
-      <FaGithub />
-    </a>
+        <hr className="my-6 border-slate-300" />
 
-    <a
-      href="https://www.linkedin.com/in/ankit-umath-26b928328/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-110 transition-transform"
-    >
-      <FaLinkedin />
-    </a>
-
-    <a
-      href="mailto:ankitumath30@gmail.com"
-      className="hover:scale-110 transition-transform"
-    >
-      <FaEnvelope />
-    </a>
-  </div>
-</div>
+<p className="text-center text-gray-500 text-sm">
+  © {new Date().getFullYear()} Ankit Umath. All Rights Reserved.
+</p>
+    
       </div>
     </section>
   );
