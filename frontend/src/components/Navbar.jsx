@@ -37,14 +37,6 @@ function Navbar() {
               </a>
             </li>
           ))}
-
-          {/* Dark Mode Button
-          <button
-            onClick={toggleTheme}
-            className="text-xl hover:text-blue-600"
-          >
-            {darkMode ? <FaSun /> : <FaMoon />}
-          </button> */}
         </ul>
 
         {/* Mobile Buttons */}
