@@ -5,8 +5,35 @@ import OnCourseIMG from "../assets/OnCourseIMG.png";
 
 const projects = [
 
-   {
+    {
     id: 1,
+    title: "College Hackathon Website SquidHack26",
+    description:
+      "Designed a responsive and animated UI based on squid game theme for a college hackathon website, featuring event details, registration, and schedule.",
+    image:
+      squidHackImg,
+    technologies: [
+      "React",
+      "Vite",
+      "React Router DOM",
+      "Axios",
+      "MongoDB",
+      "Moongoose",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "Tailwind CSS",
+      "JavaScript (ES6+)",
+
+    ],
+    github:
+      "https://github.com/ankitumath/Hackathon-Website",
+    demo:
+      "https://squid-hack-website.vercel.app/",
+  },
+
+   {
+    id: 2,
     title: "Online Course Management System",
     description:
       "A full-stack MERN application that enables students to browse and enroll in courses, track learning progress, and allows administrators to manage courses and enrollments.",
@@ -27,28 +54,7 @@ const projects = [
       "https://online-course-management-system-one.vercel.app",
   },
 
-  {
-    id: 2,
-    title: "College Hackathon Website UI",
-    description:
-      "Designed a responsive and animated UI based on squid game theme for a college hackathon website, featuring event details, registration, and schedule.",
-    image:
-      squidHackImg,
-    technologies: [
-      "HTML",
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Express",
-      "Tailwind CSS",
-      "JavaScript",
-
-    ],
-    github:
-      "https://github.com/ankitumath/Hackathon-Website",
-    demo:
-      "https://taskmanager.vercel.app",
-  },
+  
 
   {
     id: 3,
